@@ -171,11 +171,11 @@ class Game:
             # if dealer's second card is hidden
             if num_list[i] == '#':
 
-                card_img = Image.open(f"/home/shivam/PycharmProjects/BlackJack/venv/bin/Cards/back_side.jpg")
+                card_img = Image.open(f"./Cards/back_side.jpg")
             # fetch the card images which are to be showm
             else:
 
-                card_img = Image.open(f"/home/shivam/PycharmProjects/BlackJack/venv/bin/Cards/{num_list[i]}"
+                card_img = Image.open(f"./Cards/{num_list[i]}"
                                       f"{suit_list[i]}.jpg")
 
             # resize the image
