@@ -1,6 +1,32 @@
-# Blackjack
-The project has been developed entirely in Python. The game is simple and contains the basic features of a blackjack game. I have used PyCharm community edition as an IDE to develop it. Source code of the game is contained in the two modules- Game.py (BlackJack/venv/src/Game.py) and BlackjackGUI.py(BlackJack/venv/src/BlackjackGUI.py) The tkinter library in Python is used to create the GUI. The source code can be converted to .exe format using 'py2exe' for windows (http://www.py2exe.org/) and cx_freeze for linux (https://anthony-tuininga.github.io/cx_Freeze/).
+# Blackjack - A Gambling Card Game
+Equally well known as twenty-one (21). Blackjack is a comparing card game between one or more players and a dealer, where each player in turn competes against the dealer. This project supports only single player and a computer dealer along with the basic features of Blackjack. It is developed entirely using Python GUI library - [**Tkinter**](https://docs.python.org/3/library/tkinter.html).
 
-INSTRUCTIONS- If you have python installed, then open the folder 'BlackJack'. Then go to /venv/src/BlackjackGUI.py. Run it using terminal or command prompt or any python IDE (I prefer 'PyCharm'). The tkinter features in the project may differ when running on the terminal or any IDE other than PyCharm. To download PyCharm- https://www.jetbrains.com/pycharm/ .
+Here's how it looks like in action:                            
+>![blackjack demo](https://github.com/shivamacs/blackjack/blob/master/BlackJack/demo.gif)
 
-HOW TO PLAY- A player can interact with the game using keyboard and mouse. Rules of the game are introduced in the game itself. For more information, visit- https://www.blackjackapprenticeship.com/how-to-play-blackjack/ . The interactive buttons make the program control very easy. Players just have to click on the buttons to perform the desired operations. For ex- while a hand is being played, the player has two choices whether to HIT (get another card from the deck) or to STAND (to hold the total and end the turn), the GUI provides the buttons for both moves.
+## Requirements
+- Python 3.6.
+
+## Run
+- Clone this repository
+- Navigate to the repository folder locally
+```
+~/../blackjack$ cd BlackJack/venv/src
+~/../blackjack/BlackJack/venv/src$ python BlackjackGUI.py
+```
+## Basic Blackjack Rules
+- The goal of blackjack is to beat the dealer's hand without going over 21.
+- Face cards are worth 10. Aces are worth 1 or 11, whichever makes a better hand.
+- Each player starts with two cards, one of the dealer's cards is hidden until the end.
+- To 'Hit' is to ask for another card. To 'Stand' is to hold your total and end your turn.
+- If you go over 21 you bust, and the dealer wins regardless of the dealer's hand.
+- If you are dealt 21 from the start (Ace & 10), you got a blackjack.
+- You will win 2.5 times the bet on having a blackjack (here).
+- Dealer will hit until his/her cards total becomes 17 or higher.
+
+## How to play
+1. You have to enter the number of chips (gambling currency) you have.
+2. Next, you have to enter the number of chips to bet.
+3. According to the sum of your cards, you have the options to HIT or STAND.
+4. You will win or lose the hand according to game rules.
+5. You can play any number of hands until your chips dry out, or you can exit the game anytime.
