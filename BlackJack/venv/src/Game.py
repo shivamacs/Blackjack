@@ -9,13 +9,12 @@ from PIL import ImageTk, Image                              # python imaging lib
 # assignments to create a pack of cards which are to be used in the entire game
 suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds']
 ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
-value = {'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5, 'Six': 6, 'Seven': 7, 'Eight': 8, 'Nine': 9, 'Ten': 10, 'Jack': 10,
-         'Queen': 10, 'King': 10, 'Ace': 1}
+value = {ranks[k]: int('1234567899990'[k]) + 1 for k in range(13)}
 pack = []
 
 for n in range(0, 4):
     k = 0
-    for j in range(n*13, n*13+13):
+    for j in range(n * 13, n * 13 + 13):
 
         pack.append((ranks[k], suits[n]))                   # pack created
         k += 1
